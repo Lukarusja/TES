@@ -1,0 +1,36 @@
+body{
+  
+}
+
+#uploadContainer{
+  padding: 50px;
+  border-color: #e8e8e8;
+  border-style: dashed;
+  background-color: #fafafa;
+  margin: 50px;
+  }
+
+  .progress-bar{
+    height: 35px;
+    width: 250px;
+    border: 2px solid black;
+  }
+
+  .progress-bar-fill {
+    height: 100%;
+    width: 0%;
+    background: #deb887;
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    transition: width 0.25s;
+  }
+
+  .progress-bar-text {
+    margin-left: 10px;
+    font-weight: bold;
+  }
+
+  .button {
+    color: blueviolet;
+  }

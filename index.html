@@ -5,8 +5,11 @@
      <meta name="viewport" content="width=device-width", initial-scale=1.0>
      <meta http-equiv="X-UA-Compatible" content="ie-edge">
      <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
-     <link rel="stylesheet" href="style.css">
-     <title>Navigation Bar</title>
+     <link rel="stylesheet" href="assets/css/style.css">
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+     <script src="assets/scripts/bar.js"></script>
+     <script src="assets/scripts/index.js"></script>
+     <title>Dog Breed Identifier | Home</title>
 </head>
 <body>
     <nav>
@@ -15,42 +18,48 @@
         </div>
         <ul class ="nav-links">
             <li><a href="#">Home</a></li>
-            <li><a href="#">Scan</a></li>
-            <li><a href="#">Tutorial</a></li>
-            <li><a href="#">About</a></li>
+            <li><a href="scan.html">Scan</a></li>
+            <li><a href="tutorial.html">Tutorial</a></li>
+            <li><a href="about.html">About</a></li>
         </ul>
         <div class="burger">
             <div class="line1"></div>
             <div class="line2"></div>
             <div class="line3"></div>
         </div>
-        <div class="slideshow-container">
-
-            <!-- Full-width slides/quotes -->
-            <div class="mySlides">
-              <q>80% of people with pets lack information about their pets.</q>
-            </div>
-          
-            <div class="mySlides">
-              <q>48% of dog owners dont know how to care for their dogs.</q>
-            </div>
-          
-            <div class="mySlides">
-              <q>Learn how to care for your beloved pets.</q>
-            </div>
-          
-            <!-- Next/prev buttons -->
-            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-            <a class="next" onclick="plusSlides(1)">&#10095;</a>
-          </div>
-          
-          <!-- Dots/bullets/indicators -->
-          <div class="dot-container">
-            <span class="dot" onclick="currentSlide(1)"></span>
-            <span class="dot" onclick="currentSlide(2)"></span>
-            <span class="dot" onclick="currentSlide(3)"></span>
-          </div>
     </nav>
-    <script src="bar.js"></script>
+    <div id=video-container>
+      <video autoplay muted loop onclick="this.paused? this.play() : this.pause()" id="main-video">
+        <source src="assets/videos/testInverted.mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>  
+    <div class="slideshow-container">
+
+        <!-- Full-width slides/quotes -->
+        <div class="mySlides">
+          <q>80% of people with pets lack information about their pets.</q>
+        </div>
+      
+        <div class="mySlides">
+          <q>48% of dog owners dont know how to care for their dogs.</q>
+        </div>
+      
+        <div class="mySlides">
+          <q>Learn how to care for your beloved pets.</q>
+        </div>
+      
+        <!-- Next/prev buttons -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      </div>
+      
+      <!-- Dots/bullets/indicators -->
+      <div class="dot-container">
+        <script>currentSlide(1);</script>
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+      </div>
 </body>
 </html>
