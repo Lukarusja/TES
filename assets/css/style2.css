@@ -89,6 +89,7 @@ li a:hover{
 }
 
 .slideshow-container {
+    box-shadow: 2px #333333;
     margin-left: 25%;
     margin-right: 25%;
     margin-bottom: 50px;
@@ -188,6 +189,7 @@ li a:hover{
 }
 
 .large-container{
+    height: auto;
     text-align: center;
     background-color: white;
 }
