@@ -4,6 +4,7 @@ overflow-x: hidden;
 background-image: url("../images/background.png");
 background-repeat: no-repeat;
 background-attachment: fixed;
+background-size: cover;
 }
 *{
     margin: 0px;
@@ -223,9 +224,8 @@ li a:hover{
     right: 40%;
     margin: auto;
 }
-#learn-more-heaer{
-    width: 80%;
-    margin: 20px;
+#learn-more-header{
+    padding: 50px;
 }
 #learn-more-text{
     width: 80%;
