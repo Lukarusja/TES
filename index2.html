@@ -59,7 +59,13 @@
         <button class="button center" id="LearnMore" type="button"><b>Learn More</b></button>
     </div>
     <div class="large-container">
-      <h1>LEARN MORE ABOUT YOUR DOG HERE</h1>
+      <h1 id="learn-more">LEARN MORE ABOUT YOUR DOG HERE</h1>
+      <div id=video-container>
+        <video autoplay muted loop onclick="this.paused? this.play() : this.pause()" id="main-video">
+          <source src="assets/videos/testInverted.mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>  
     </div>
 </body>
 </html>
