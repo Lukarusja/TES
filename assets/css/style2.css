@@ -3,6 +3,7 @@ font-family: 'Roboto Mono', monospace;
 overflow-x: hidden;
 background-image: url("../images/background.png");
 background-repeat: no-repeat;
+background-attachment: fixed;
 }
 *{
     margin: 0px;
