@@ -56,16 +56,22 @@
             <span class="dot" onclick="currentSlide(2)"></span>
             <span class="dot" onclick="currentSlide(3)"></span>
         </div>
-        <button class="button center" id="LearnMore" type="button"><b>Learn More</b></button>
+        <div class="column">
+          <button class="button center" id="ScanNow" type="button"><b>Scan Now</b></button>
+          <button class="button center" id="LearnMore" type="button"><b>Learn More</b></button>
+        </div>
     </div>
     <div class="large-container">
-      <h1 id="learn-more">LEARN MORE ABOUT YOUR DOG HERE</h1>
+      <h1 id="learn-more-header">LEARN MORE ABOUT YOUR DOG HERE</h1>
       <div id=video-container>
         <video autoplay muted loop onclick="this.paused? this.play() : this.pause()" id="main-video">
           <source src="assets/videos/testInverted.mp4">
           Your browser does not support the video tag.
         </video>
-      </div>  
+      </div>
+      <div id="learn-more-text">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      </div>
     </div>
 </body>
 </html>
