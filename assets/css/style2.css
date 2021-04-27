@@ -198,7 +198,7 @@ li a:hover{
     background-color: whitesmoke;
 }
 #video-container{
-    filter: drop-shadow(0 0 5px #333);
+    /* filter: drop-shadow(0 0 5px #333); */
 }
 
 #main-video{
