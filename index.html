@@ -1,57 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+     <link rel="icon" href="favicon.ico">
      <meta charset="UTF-8">
      <meta name="viewport" content="width=device-width", initial-scale=1.0>
      <meta http-equiv="X-UA-Compatible" content="ie-edge">
      <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
      <link rel="stylesheet" href="style.css">
-     <title>Navigation Bar</title>
+     <title>Home page</title>
 </head>
 <body>
-    <nav>
-        <div class="logo">
-            <h4>DI</h4>
-        </div>
-        <ul class ="nav-links">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="#">Scan</a></li>
-            <li><a href="#">Tutorial</a></li>
-            <li><a href="About.html">About</a></li>
-        </ul>
-        <div class="burger">
-            <div class="line1"></div>
-            <div class="line2"></div>
-            <div class="line3"></div>
-        </div>
-        <div class="slideshow-container">
+    <section class="header">
+        <nav>
+            <div class="logo">
+                <h4>Dog Breeds</h4>
+            </div>
+            <ul class ="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">Scan</a></li>
+                <li><a href="tutorial.html">Tutorial</a></li>
+                <li><a href="About.html">About</a></li>
+            </ul>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </nav>
+    </section>
+    <div class="textbox">
+        <h1>Know your pets more.</h1>
+        <p>Blabllablablabla balb alb alba lbalbalbalbabab<br>make sure you buy what you need.</p>
+        <button class="learn">LEARN MORE</button>
+    </div>
+    <section class="banner">
+        <div class="b-content">
+            <img src="Untitled-2.png" class="banner-image">
+            <h2>Promotional Video</h2>
+            <p>This does this, and this does that. bada bing. bada pow. bam</p>
+            <img src="play.png" class="play-button" onclick="playVideo('test.webm')">
 
-            <!-- Full-width slides/quotes -->
-            <div class="mySlides">
-              <q>80% of people with pets lack information about their pets.</q>
-            </div>
-          
-            <div class="mySlides">
-              <q>48% of dog owners dont know how to care for their dogs.</q>
-            </div>
-          
-            <div class="mySlides">
-              <q>Learn how to care for your beloved pets.</q> 
-            </div>
-          
-            <!-- Next/prev buttons -->
-            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-            <a class="next" onclick="plusSlides(1)">&#10095;</a>
-          </div>
-          
-          <!-- Dots/bullets/indicators -->
-          <div class="dot-container">
-            <span class="dot" onclick="currentSlide(1)"></span>
-            <span class="dot" onclick="currentSlide(2)"></span>
-            <span class="dot" onclick="currentSlide(3)"></span>
-          </div>
-    </nav>
+        <div class="promo" id="videoPlayer">
+            <video src="test.webm" controls id="promoVideo"></video>
+            <img src="close.png" class ="close-button" onclick="stopVideo()">
+            
+        </div>
+        </div>
+    </section>
+</body>
     <script src="bar.js"></script>
     <script src="animation.js"></script>
-</body>
+    <script src="video.js"></script>
 </html>
