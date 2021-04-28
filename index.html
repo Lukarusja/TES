@@ -5,7 +5,7 @@
      <meta name="viewport" content="width=device-width", initial-scale=1.0>
      <meta http-equiv="X-UA-Compatible" content="ie-edge">
      <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
-     <link rel="stylesheet" href="assets/css/style.css">
+     <link rel="stylesheet" href="assets/css/style2.css">
      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
      <script src="assets/scripts/bar.js"></script>
      <script src="assets/scripts/index.js"></script>
@@ -14,11 +14,11 @@
 <body>
     <nav>
         <div class="logo">
-            <h4>Insert Logo</h4>
+            <h4>Dog Breed Identifier</h4>
         </div>
         <ul class ="nav-links">
             <li><a href="#">Home</a></li>
-            <li><a href="scan.html">Scan</a></li>
+            <li><a href="scan.php">Scan</a></li>
             <li><a href="tutorial.html">Tutorial</a></li>
             <li><a href="about.html">About</a></li>
         </ul>
@@ -28,38 +28,56 @@
             <div class="line3"></div>
         </div>
     </nav>
-    <div id=video-container>
-      <video autoplay muted loop onclick="this.paused? this.play() : this.pause()" id="main-video">
-        <source src="assets/videos/testInverted.mp4">
-        Your browser does not support the video tag.
-      </video>
-    </div>  
-    <div class="slideshow-container">
+    <div class="slide-container-group">
+        <div class="slideshow-container">
 
-        <!-- Full-width slides/quotes -->
-        <div class="mySlides">
-          <q>80% of people with pets lack information about their pets.</q>
+            <!-- Full-width slides/quotes -->
+            <div class="mySlides">
+              <q>80% of people with pets lack information about their pets.</q>
+            </div>
+          
+            <div class="mySlides">
+              <q>48% of dog owners dont know how to care for their dogs.</q>
+            </div>
+          
+            <div class="mySlides">
+              <q>Learn how to care for your beloved pets.</q>
+            </div>
+          
+            <!-- Next/prev buttons -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
         </div>
-      
-        <div class="mySlides">
-          <q>48% of dog owners dont know how to care for their dogs.</q>
+          <!-- Dots/bullets/indicators -->
+        <div class="dot-container">
+            <script>currentSlide(1);</script>
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
         </div>
-      
-        <div class="mySlides">
-          <q>Learn how to care for your beloved pets.</q>
+        <div class="column1">
+          <ul class ="">
+            <li><button class="button" id="aScanNow" type="button"><b>Scan Now</b></button></li>
+            <li><button class="button" id="aLearnMore" type="button"><b>Learn More</b></button></li>
+        </ul>
         </div>
-      
-        <!-- Next/prev buttons -->
-        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    <div class="large-container">
+      <h1 id="learn-more-header">LEARN MORE ABOUT YOUR DOG HERE</h1>
+      <div id="learn-more-text">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
       </div>
-      
-      <!-- Dots/bullets/indicators -->
-      <div class="dot-container">
-        <script>currentSlide(1);</script>
-        <span class="dot" onclick="currentSlide(1)"></span>
-        <span class="dot" onclick="currentSlide(2)"></span>
-        <span class="dot" onclick="currentSlide(3)"></span>
+      <div id=video-container>
+        <video autoplay muted loop onclick="this.paused? this.play() : this.pause()" id="main-video">
+          <source src="assets/videos/testInverted.mp4">
+          Your browser does not support the video tag.
+        </video>
       </div>
+      <div id="learn-more-text">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      </div>
+      <br>
+      <br>
+    </div>
 </body>
 </html>
