@@ -2,11 +2,15 @@ body{
   
 }
 
-#uploadContainer{
-  height: 1000px;
+#main-container{
+  height: auto;
   padding: 50px;
   border-color: #e8e8e8;
   border-style: dashed;
   background-color: #fafafa;
   margin: 50px;
   }
+
+#upload-container{
+  margin:50px;
+}
