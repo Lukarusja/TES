@@ -1,6 +1,5 @@
 var mainPage;
 (function(mainPage) {
-
 	
 	$("#upload").click(function(){
 		console.log("upload button clicked");		
@@ -9,17 +8,23 @@ var mainPage;
 	$( "#submit" ).click(function uploadImage(){
 		console.log("submitted clicked");
 		//form submitted with upload photo button
-		var form = document.get
+		var form = document.getElementById("uploadForm");
+		//console.log(form);
 		var fd = new FormData(form); //this is the variable that holds the current state of the form when the button is clicked.
 		var xhttp = new XMLHttpRequest(); //this is how we send the request to the server with our formData(the user image)
 		xhttp.open("POST","upload.php",true); //calling by POST is more secure (alternative is GET and puts binary information in the URL, yuck!)
 		xhttp.onreadystatechange = function(){
+		//console.log(this.readyState);
 			if(this.readyState ==4 &&this.status==200){ //if the php loads successfully, giving us our destination filename etc. in responsetext
 					$('#img').attr('src',xhttp.responseText); //this and innerhtml can be changed based on this data
-					$('.preview img').show();				
+					$('.preview img').show();
+					console.log("here");
+					//console.log(xhttp);
+				
 			};
 		};
-
+		
+		//console.log(fd);
 		xhttp.send(fd);
 	});
 	async function predictImage() {
@@ -62,12 +67,17 @@ $("#predict").click(async function(){
 	});
 	console.log(class_names); 
 	console.log(parsedData); //sorted results 	
+	console.log("BEST DOG");
 	console.log(parsedData[0]); //top result (our best guess)
 	var bestDog = class_names[parsedData[0].idx];
 	var confidence = parsedData[0].item;
+    $("#predictText").html("Our model predicts that your dog is a(n):");
 	$("#result").html(bestDog);
-	confidence = confidence*100;
+	confidence = (confidence*100).toFixed(2);
 	$("#resultAcc").html("Percentage confidence = "+confidence+"%");
 	console.log(bestDog);
 });
-$(document).ready(function(){});
+$(document).ready(function(){
+	console.log("ready"); 
+	
+});
