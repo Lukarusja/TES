@@ -38,13 +38,13 @@
 }
 
 .learn{
-  border:3px solid rgb(31, 138, 102);
+  border:3px solid #DEB887;
   border-radius: 1rem;
   padding: 10px 20px;
   font-size: 20px;
   font-family:'Roboto Mono', monospace;
   color: rgb(255, 255, 255);
-  background-color: rgba(31, 138, 102, 0.411);
+  background-color: rgba(222, 184, 135, 0.411);
   font-weight: bold;
   position: relative;
   overflow: hidden;
@@ -373,7 +373,7 @@ nav{
 .footer-box{
   position: relative;
   width: 100%;
-  height: 10vh;
+  height: auto;
   background: black;
   bottom: 0;
   text-align: center;
