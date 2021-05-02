@@ -44,10 +44,13 @@
                 </div>
             </form>
             <input type="button" class="button" value="Predict Breed" id="predict">
-            <div>
+            <div id="output">
                 <h3 class="center-horizontal" id="predictText"></h3>
                 <h2 class="center-horizontal" id="result"></h2>
                 <h2 class="center-horizontal"id="resultAcc"></h2>
+            </div>
+            <div id="sql-stuff">
+            <p> breed info goes here</p>
             </div>
         </div>
     </div>
