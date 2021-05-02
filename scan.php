@@ -33,7 +33,7 @@
         </div>
     </nav>
     <div id="main-container">
-        <h1 class="center-horizontal">Upload Your Photo Here</h1>
+        <h1 class="center">Upload Your Photo Here</h1>
         <div id="upload-container">
             <form method="post" action="" enctype="multipart/form-data" id="uploadForm">
                 <div class="preview">
