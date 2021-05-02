@@ -1,0 +1,25 @@
+#main-container{
+  height: auto;
+  padding: 50px;
+  border-color: #e8e8e8;
+  border-style: dashed;
+  background-color: #fafafa;
+  margin: 50px;
+}
+
+#upload-container{
+  height: auto;
+  width: 80%;
+  position: relative;
+  margin-left:20%;
+  margin-right:20%;
+  background-color: whitesmoke;
+}
+
+.centered{
+	text-align:center;
+}
+
+#predict{
+
+}
