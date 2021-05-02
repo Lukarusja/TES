@@ -71,10 +71,10 @@ $("#predict").click(async function(){
 	console.log(parsedData[0]); //top result (our best guess)
 	var bestDog = class_names[parsedData[0].idx];
 	var confidence = parsedData[0].item;
-    $("#predictText").html("Our model predicts that your dog is a(n):");
+    $("#predictText").html("Our model predicts that your dog is a:");
 	$("#result").html(bestDog);
 	confidence = (confidence*100).toFixed(2);
-	$("#resultAcc").html("Percentage confidence = "+confidence+"%");
+	//$("#resultAcc").html("Percentage confidence = "+confidence+"%");
 	console.log(bestDog);
 });
 $(document).ready(function(){
