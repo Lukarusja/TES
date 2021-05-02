@@ -18,7 +18,7 @@
 <body>
     <nav>
         <div class="logo">
-            <h4>Insert Logo</h4>
+            <h4>Dog Breed Identifier</h4>
         </div>
         <ul class="nav-links">
             <li><a href="index.html">Home</a></li>
