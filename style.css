@@ -2,6 +2,7 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
+    font-family: 'Roboto Mono', monospace;
 }
 
 .header{
@@ -10,7 +11,8 @@
   background-image:linear-gradient(rgba(0, 0, 0, 0.692),rgba(48, 48, 48, 0.699)),url("background.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-size: cover
+  background-size: cover;
+  background-position: center;
 }
 
 /* Home */ 
@@ -23,9 +25,7 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%,-50%);
-  text-align:center;
-  font-family: 'Roboto Mono', monospace;
-  
+  text-align:center;  
 }
 
 .textbox h1{
@@ -55,6 +55,7 @@
 
 .learn:hover{
   background-color: rgba(141, 119, 89, 0.411);
+  transform: translateY(-5%);
 }
 
 .banner{
@@ -408,4 +409,74 @@ nav{
   line-height: 30px;
   color: white;
   font-family: 'Roboto Mono', monospace;
+}
+
+.tut-banner {
+  height: 50vh;
+  width: 100%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.658),rgba(0, 0, 0, 0.39)),url("tutorial.png");
+  background-size: cover;
+}
+.tut-banner h1{
+  position: absolute;
+  top: 28%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  font-size: 65px;
+  color: rgb(255, 255, 255);
+}
+.tutorial-section{
+  display: flex;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.step{
+  background:rgba(255, 255, 255, 0.904);
+  width: 600px;
+  height: 600px;
+  margin: 20px;
+  box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.1);
+}
+.step-image{
+  background-color: aqua;
+  height: 350px;
+  margin-bottom: 15px;
+  background-size: cover;
+}
+.step-image h3{
+  text-align: center;
+  padding-top: 370px
+}
+.step-image p{
+  text-align: center;
+  padding: 10px;
+}
+.image-2{
+  background-image: url('smile.jpg');
+}
+.step:hover{
+  background-color: rgb(255, 255, 255);
+  transition: 0.3s;
+  transform: translateY(-0.5%);
+  box-shadow: 0 4rem 8rem rgba(0, 0, 0, 0.5);
+}
+.finish-tut{
+  width: 80%;
+  margin-left: 10%;
+  background-color: burlywood;
+  background-size: cover;
+  margin-bottom: 100px;
+  padding: 50px;
+  text-align: center;
+}
+.finish-tut h3{
+  color: white;
+  font-size: 25px;
+  padding-bottom: 20px;
+  font-weight: bolder;
+}
+.finish-tut p{
+  color: white;
 }
