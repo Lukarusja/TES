@@ -35,6 +35,23 @@
             <button class="learn">LEARN MORE</button>
         </a>
     </div>
+    <div class="large-container" id="learn-more">
+      <h1 id="learn-more-header">LEARN MORE ABOUT YOUR DOG HERE</h1>
+      <div id="learn-more-text">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      </div>
+      <div id=video-container>
+        <video autoplay muted loop onclick="this.paused? this.play() : this.pause()" id="main-video">
+          <source src="assets/videos/test.webm">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+      <div id="learn-more-text">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      </div>
+      <br>
+      <br>
+    </div>
     <footer>
         <div class="footer-box">
             <div class="footer-content">

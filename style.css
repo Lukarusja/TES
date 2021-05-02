@@ -260,8 +260,17 @@ nav{
   transform: rotate(45deg) translate(-5px, -6px);
 }
 
+/*Bottom half of index*/
+.large-container{
+  height: auto;
+  text-align: center;
+  background-color: whitesmoke;
+}
 
-
+#learn-more-text{
+  margin-left:50px;
+  margin-right:50px;
+}
 
 /* About us page - remaking this, ill make it more aesthetic*/
 .sub-header{
