@@ -23,7 +23,7 @@
             <h4>Dog Breed Identifier</h4>
         </div>
         <ul class="nav-links">
-            <li><a href="index.html">Home</a></li>
+            <li><a href="index.php">Home</a></li>
             <li><a href="#">Scan</a></li>
             <li><a href="tutorial.html">Tutorial</a></li>
             <li><a href="about.html">About</a></li>
