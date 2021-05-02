@@ -53,7 +53,7 @@
                 <h2 class="center-horizontal"id="resultAcc"></h2>
             </div>
             <div id="sql-stuff">
-            <p> breed info goes here</p>
+            <!--BREED INFO GOES HERE-->
             </div>
         </div>
     </div>
