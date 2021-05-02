@@ -141,9 +141,6 @@
 
 }
 
-
-
-
 /* The main nav bar - finished and responsive*/
 
 nav{
@@ -156,6 +153,10 @@ nav{
     background-color: burlywood;
     font-family: 'Roboto Mono', monospace;
     z-index: 950;
+    -webkit-user-select: none; /* Safari */        
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE10+/Edge */
+    user-select: none; /* Standard */
 }
 
 .nav-links{
