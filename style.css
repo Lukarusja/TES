@@ -53,6 +53,10 @@
   cursor: pointer;
 }
 
+.learn:hover{
+  background-color: rgba(141, 119, 89, 0.411);
+}
+
 .banner{
   min-height: 100vh;
   position: absolute;
