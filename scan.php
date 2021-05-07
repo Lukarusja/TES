@@ -35,35 +35,40 @@
         </div>
     </nav>
     <div id="main-container">
-        <h1 class="centered" id="scan-header">Upload Your Photo Here</h1>
-        <div id="upload-container">
-            <form method="post" action="" enctype="multipart/form-data" id="uploadForm">
-                <div class="centered">
-                    <input name="userPhoto" type="file" id="upload">
-                    <input type="button" class="button" value="Upload Photo" id="submit">
+        <div id="initial-container">
+            <h1 class="centered" id="scan-header">Upload Your Photo Here</h1>
+            <div id="upload-container">
+                <form method="post" action="" enctype="multipart/form-data" id="uploadForm">
+                    <div class="centered">
+                        <input name="userPhoto" type="file" id="upload">
+                        <input type="button" class="button" value="Upload Photo" id="submit">
+                    </div>
+                </form>
+                <input type="button" class="button" value="Predict Breed" id="predict">
+                <div class="preview">
+                        <img src="" id="img">
+                        <!--width="224" height="224" -->
                 </div>
-            </form>
-            <input type="button" class="button" value="Predict Breed" id="predict">
-            <div class="preview">
-                    <img src="" id="img" >
-                    <!--width="224" height="224" -->
+            </div>
+            <div>
+                <p class="centered" id="help-text"><a href="tutorial.html">Need help? Click here.</a></p>
+            </div>
+        </div>
+        <div id="result-container">
+            <div id="help-loading">
+                <h3>Predicting Breed!</h3>
+                <p>please wait, this can take a while...</p>
+                <img src="loading.svg" id="loading" alt="loading spinner">
             </div>
             <div id="output">
-                <h3 class="center-horizontal" id="predictText"></h3>
-                <h2 class="center-horizontal" id="result"></h2>
-                <h2 class="center-horizontal"id="resultAcc"></h2>
+                    <h3 class="center-horizontal" id="predictText"></h3>
+                    <h2 class="center-horizontal" id="result"></h2>
+                    <h2 class="center-horizontal"id="resultAcc"></h2>
+                </div>
+            <div id="sql-stuff">
+            <!--BREED INFO GOES HERE-->
             </div>
         </div>
-        <div>
-            <p class="centered" id="help-text"><a href="/tutorial.html">Need help? Click here.</a></p>
-        </div>
     </div>
-    <div id="result-container">
-        <div id="sql-stuff">
-            <!--BREED INFO GOES HERE-->
-        </div>
-    </div>
-
 </body>
-
 </html>
