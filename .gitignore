@@ -2,5 +2,4 @@
 uploads/*
 !uploads/test-afghan-hound.jpg
 .DS_Store
-TODO
 todo.txt
