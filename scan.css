@@ -11,32 +11,30 @@ body{
   position: relative;
   height: auto;
   width: 50%;
-  padding: 50px;
   top: 200px;
-  background-color: white;
   margin: auto;
 }
 
-@media screen and (max-width:768px){
-  body{
-    overflow-x:hidden;
-  }
-  #main-container{
-    width: 70%;
-    top: 100px;
-  }
+#scan-header{
+  padding-bottom: 20px;
 }
 
-#upload-container{
+#initial-container{
   position: relative;
   height: auto;
   text-align: center;
+  padding: 50px;
+  padding-bottom: 30px;
+  background-color: white;
+}
+
+#initial-container a{
+  font-size: small;
 }
 
 #upload-container input[type="button" i]{
   padding: 5px;
   margin: 5px;
-  
   border-style: none;
   background-color: burlywood;
   color:white;
@@ -50,7 +48,6 @@ body{
 .preview{
 	/* width: 299px;
 	height: 299px; */
-	border: 1px solid black;
 	margin:auto;
 	margin-bottom:10px;
 	background-color: white;
@@ -62,24 +59,28 @@ body{
   height: auto;
 }
 
-#scan-header{
-  padding-bottom: 20px;
+#result-container{
+  /* visibility: hidden; */
+  /* display: none; */
+  margin-top: 20px;
+  padding: 50px;
+  position: relative;
+  height: auto;
+  text-align: center;
+  background-color: white;
 }
-
 .centered{
 	text-align:center;
 }
 
-#help-text{
-  font-size: small;
-}
 #help-text a{
   color: rgb(174, 143, 103);
 }
 
-input[type="file"] {
+input[type="file"] #file-upload-button{
   margin: 5px;
   display: flexbox;
+  background-color: teal;
 }
 
 .custom-file-upload {
@@ -87,4 +88,19 @@ input[type="file"] {
   display: inline-block;
   padding: 6px 12px;
   cursor: pointer;
+}
+
+@media screen and (max-width:768px){
+  body{
+    overflow-x:hidden;
+  }
+  #main-container{
+    width: 70%;
+    top: 100px;
+  }
+}
+
+#loading{
+  width: 100px;
+  height: 100px;
 }
