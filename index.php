@@ -42,7 +42,7 @@
       </div>
       <div id=video-container>
         <video autoplay muted loop onclick="this.paused? this.play() : this.pause()" id="main-video">
-          <source src="assets/videos/test.webm">
+          <source src="test.webm">
           Your browser does not support the video tag.
         </video>
       </div>
