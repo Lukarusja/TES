@@ -7,8 +7,7 @@
      <meta http-equiv="X-UA-Compatible" content="ie-edge">
      <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
      <link rel="stylesheet" href="assets/css/style.css">
-     <script src="assets/scripts/bar.js"></script>
-     <script src="assets/scripts/animation.js"></script>
+
      <title>Dog Breed Identifier | Home</title>
 </head>
 <body>
@@ -64,4 +63,6 @@
         </div>
     </footer>
 </body>
+    <script src="assets/scripts/bar.js"></script>
+    <script src="assets/scripts/animation.js"></script>
 </html>

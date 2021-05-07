@@ -11,9 +11,6 @@
     <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@2.0.0/dist/tf.min.js"></script>
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/scan.css">
-    <script type="module" src="assets/scripts/scan.js"></script>
-    <script type="module" src="assets/scripts/bar.js"></script>
-    <script type="module" src="assets/scripts/animation.js"></script>
     <title>Dog Breed Identifier | Scan</title>
 </head>
 
@@ -71,4 +68,7 @@
         </div>
     </div>
 </body>
+    <script type="module" src="assets/scripts/scan.js"></script>
+    <script type="module" src="assets/scripts/bar.js"></script>
+    <script type="module" src="assets/scripts/animation.js"></script>
 </html>
