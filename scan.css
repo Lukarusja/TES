@@ -104,3 +104,7 @@ input[type="file"] #file-upload-button{
   width: 100px;
   height: 100px;
 }
+
+#help-loading{
+  /* display: none; */
+}
