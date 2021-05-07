@@ -9,11 +9,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@2.0.0/dist/tf.min.js"></script>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="scan.css">
-    <script type="module" src="scan.js"></script>
-    <script type="module" src="bar.js"></script>
-    <script type="module" src="animation.js"></script>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/scan.css">
+    <script type="module" src="assets/scripts/scan.js"></script>
+    <script type="module" src="assets/scripts/bar.js"></script>
+    <script type="module" src="assets/scripts/animation.js"></script>
     <title>Dog Breed Identifier | Scan</title>
 </head>
 
@@ -58,7 +58,7 @@
             <div id="help-loading">
                 <h3>Predicting Breed!</h3>
                 <p>please wait, this can take a while...</p>
-                <img src="loading.svg" id="loading" alt="loading spinner">
+                <img src="assets/images/loading.svg" id="loading" alt="loading spinner">
             </div>
             <div id="output">
                     <h3 class="center-horizontal" id="predictText"></h3>

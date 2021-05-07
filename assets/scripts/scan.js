@@ -29,7 +29,7 @@ var mainPage;
 	});
 	async function predictImage() {
 		
-		const model = await tf.loadGraphModel('model/tfjs/model.json');
+		const model = await tf.loadGraphModel('assets/model/tfjs/model.json');
 		//load converted model+weights
 		var input = tf.browser.fromPixels(document.getElementById("img")); //image
 		//take input from the html element uploaded to

@@ -6,7 +6,9 @@
      <meta name="viewport" content="width=device-width", initial-scale=1.0>
      <meta http-equiv="X-UA-Compatible" content="ie-edge">
      <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
-     <link rel="stylesheet" href="style.css">
+     <link rel="stylesheet" href="assets/css/style.css">
+     <script src="assets/scripts/bar.js"></script>
+     <script src="assets/scripts/animation.js"></script>
      <title>Dog Breed Identifier | Home</title>
 </head>
 <body>
@@ -42,7 +44,7 @@
       </div>
       <div id=video-container>
         <video autoplay muted loop onclick="this.paused? this.play() : this.pause()" id="main-video">
-          <source src="test.webm">
+          <source src="assets/videos/test.webm">
           Your browser does not support the video tag.
         </video>
       </div>
@@ -62,6 +64,4 @@
         </div>
     </footer>
 </body>
-    <script src="bar.js"></script>
-    <script src="animation.js"></script>
 </html>
