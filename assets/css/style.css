@@ -498,3 +498,7 @@ nav{
 .finish-tut p{
   color: white;
 }
+
+.centered{
+	text-align:center;
+}
