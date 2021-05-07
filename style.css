@@ -277,7 +277,8 @@ nav{
   margin-bottom: 15px;
 }
 #learn-more-header{
-  margin: 15px;
+  padding-top: 80px;
+  padding-bottom: 30px
 }
 
 /* About us page - remaking this, ill make it more aesthetic*/
