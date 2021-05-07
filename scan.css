@@ -34,9 +34,9 @@ body{
 }
 
 #upload-container input[type="button" i]{
-  padding: 15px;
+  padding: 5px;
   margin: 5px;
-  display: flexbox;
+  
   border-style: none;
   background-color: burlywood;
   color:white;
@@ -44,12 +44,7 @@ body{
 }
 
 #upload-container input[type="button" i]:hover{
-  padding: 15px;
-  margin: 5px;
-  display: flexbox;
-  border-style: none;
   background-color: rgb(174, 143, 103);
-  color:white;
 }
 
 .preview{
@@ -63,12 +58,33 @@ body{
 
 .preview img{
 	display:none;
+  width: 100%;
+  height: auto;
 }
 
 #scan-header{
-  padding-bottom: 50px;
+  padding-bottom: 20px;
 }
 
 .centered{
 	text-align:center;
+}
+
+#help-text{
+  font-size: small;
+}
+#help-text a{
+  color: rgb(174, 143, 103);
+}
+
+input[type="file"] {
+  margin: 5px;
+  display: flexbox;
+}
+
+.custom-file-upload {
+  border: 1px solid #ccc;
+  display: inline-block;
+  padding: 6px 12px;
+  cursor: pointer;
 }
