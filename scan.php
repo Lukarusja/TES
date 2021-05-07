@@ -45,13 +45,17 @@
             </form>
             <input type="button" class="button" value="Predict Breed" id="predict">
             <div class="preview">
-                    <img src="" id="img" width="224" height="224">
+                    <img src="" id="img" >
+                    <!--width="224" height="224" -->
             </div>
             <div id="output">
                 <h3 class="center-horizontal" id="predictText"></h3>
                 <h2 class="center-horizontal" id="result"></h2>
                 <h2 class="center-horizontal"id="resultAcc"></h2>
             </div>
+        </div>
+        <div>
+            <p class="centered" id="help-text"><a href="/tutorial.html">Need help? Click here.</a></p>
         </div>
     </div>
     <div id="result-container">
