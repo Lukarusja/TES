@@ -64,5 +64,4 @@
 </body>
     <script src="bar.js"></script>
     <script src="animation.js"></script>
-    <script src="video.js"></script>
 </html>
