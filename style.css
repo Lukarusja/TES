@@ -55,7 +55,10 @@
 
 .learn:hover{
   background-color: rgba(141, 119, 89, 0.411);
-  transform: translateY(-5%);
+  transform: translateY(3%);
+  -moz-box-shadow:    3px 4px 5px #000;
+  -webkit-box-shadow: 3px 4px 5px #000;
+  box-shadow:         3px 4px 5px #000;
 }
 
 .banner{
@@ -264,12 +267,16 @@ nav{
 .large-container{
   height: auto;
   text-align: center;
-  background-color: whitesmoke;
 }
 
 #learn-more-text{
-  margin-left:50px;
-  margin-right:50px;
+  margin-left:25%;
+  margin-right:25%;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+#learn-more-header{
+  margin: 15px;
 }
 
 /* About us page - remaking this, ill make it more aesthetic*/
