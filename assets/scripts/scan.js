@@ -32,6 +32,10 @@ var mainPage;
 		const model = await tf.loadGraphModel('assets/model/tfjs/model.json');
 		//load converted model+weights
 		var input = tf.browser.fromPixels(document.getElementById("img")); //image
+		input = tf.image.resizeBilinear(
+			input,
+			[224, 224]
+		);
 		//take input from the html element uploaded to
 		input = input.reshape([-1,224,224,3]);
 		input = input.toFloat();
@@ -44,7 +48,7 @@ var mainPage;
 })(mainPage || (mainPage = {}));
 
 $("#predict").click(async function(){
-	console.log(mainPage);
+	console.log("this is" + mainPage);
 	var prOutput = await mainPage.predictImage();
 	console.log(prOutput);
 	var class_names =['affenpinscher', 'afghan_hound', 'african_hunting_dog', 'airedale', 'american_staffordshire_terrier', 'appenzeller', 'australian_terrier', 'basenji', 'basset', 'beagle', 'bedlington_terrier', 'bernese_mountain_dog', 'black-and-tan_coonhound', 'blenheim_spaniel', 'bloodhound', 'bluetick', 'border_collie', 'border_terrier', 'borzoi', 'boston_bull', 'bouvier_des_flandres', 'boxer', 'brabancon_griffon', 'briard', 'brittany_spaniel', 'bull_mastiff', 'cairn', 'cardigan', 'chesapeake_bay_retriever', 'chihuahua', 'chow', 'clumber', 'cocker_spaniel', 'collie', 'curly-coated_retriever', 'dandie_dinmont', 'dhole', 'dingo', 'doberman', 'english_foxhound', 'english_setter', 'english_springer', 'entlebucher', 'eskimo_dog', 'flat-coated_retriever', 'french_bulldog', 'german_shepherd', 'german_short-haired_pointer', 'giant_schnauzer', 'golden_retriever', 'gordon_setter', 'great_dane', 'great_pyrenees', 'greater_swiss_mountain_dog', 'groenendael', 'ibizan_hound', 'irish_setter', 'irish_terrier', 'irish_water_spaniel', 'irish_wolfhound', 'italian_greyhound', 'japanese_spaniel', 'keeshond',
@@ -67,7 +71,6 @@ $("#predict").click(async function(){
 	});
 	console.log(class_names); 
 	console.log(parsedData); //sorted results 	
-	console.log("BEST DOG");
 	console.log(parsedData[0]); //top result (our best guess)
 	var bestDog = class_names[parsedData[0].idx];
 	var confidence = parsedData[0].item;
@@ -77,7 +80,4 @@ $("#predict").click(async function(){
 	//$("#resultAcc").html("Percentage confidence = "+confidence+"%");
 	console.log(bestDog);
 });
-$(document).ready(function(){
-	console.log("ready"); 
-	
-});
+$(document).ready(function(){});
