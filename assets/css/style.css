@@ -51,6 +51,7 @@
   position: relative;
   overflow: hidden;
   box-shadow: 0 10px 10px rgba(0, 0, 0, 0.336);
+  transition: 0.5s;
   cursor: pointer;
 }
 
