@@ -38,6 +38,7 @@ body{
   border-style: none;
   background-color: burlywood;
   color:white;
+  transition: 0.5s;
   cursor: pointer;
 }
 
@@ -116,10 +117,25 @@ input[type=file]::file-selector-button{
   border-style: none;
   border-radius: .2em;
   background-color: burlywood;
-  transition: 1s;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+input[type=file]::-webkit-file-upload-button {
+  padding: 5px;
+  margin: 5px;
+  color: white;
+  border-style: none;
+  border-radius: .2em;
+  background-color: burlywood;
+  transition: 0.5s;
   cursor: pointer;
 }
 
 input[type=file]::file-selector-button:hover {
+  background-color: rgb(174, 143, 103);
+}
+
+input[type=file]::-webkit-file-upload-button:hover {
   background-color: rgb(174, 143, 103);
 }
