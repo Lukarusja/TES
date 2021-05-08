@@ -14,7 +14,7 @@
     <section class="header">
         <nav>
             <div class="logo">
-                <h4>Dog Breed Identifier</h4>
+                <h4><a href="index.php">Dog Breed Identifier</a></h4>
             </div>
             <ul class ="nav-links">
                 <li><a href="#">Home</a></li>

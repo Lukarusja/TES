@@ -16,8 +16,13 @@
   background-position: center;
 }
 
-/* Home */ 
+.logo a:hover, .logo a:visited, .logo a:link, .logo a:active
+{
+    text-decoration: none;
+    color: black;
+}
 
+/* Home */ 
 
 .textbox{
   position: absolute;
