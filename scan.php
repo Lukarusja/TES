@@ -12,6 +12,23 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/scan.css">
     <title>Dog Breed Identifier | Scan</title>
+    <script>
+        function showDog(str) {
+            console.log(str);
+            if (str == "") {
+                document.getElementById("sql-data").innerHTML = "";
+                return;
+            }
+            else{
+                var xmlhttp = new XMLHttpRequest();
+                xmlhttp.onreadystatechange = function() {
+                    document.getElementById("sql-data").innerHTML = this.responseText;
+                }
+                xmlhttp.open("GET", "getdog.php?q="+str, true);
+                xmlhttp.send();
+            }
+        }
+    </script>
 </head>
 
 <body>
@@ -62,7 +79,7 @@
                     <h2 class="center-horizontal" id="result"></h2>
                     <h2 class="center-horizontal" id="resultAcc"><h2>
                 </div>
-            <div id="sql-stuff">
+            <div id="sql-data">
             <!--BREED INFO GOES HERE-->
             </div>
         </div>
