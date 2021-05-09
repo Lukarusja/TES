@@ -44,10 +44,11 @@
   color: white;
 }
 
-.learn{
+.main-button{
   border:3px solid #DEB887;
   border-radius: 1rem;
   padding: 10px 20px;
+  min-width: 170px;
   font-size: 20px;
   font-family:'Roboto Mono', monospace;
   color: rgb(255, 255, 255);
@@ -60,7 +61,7 @@
   cursor: pointer;
 }
 
-.learn:hover{
+.main-button:hover{
   background-color: rgba(141, 119, 89, 0.411);
   transform: translateY(3%);
   -moz-box-shadow:    3px 4px 5px #000;

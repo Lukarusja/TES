@@ -30,11 +30,15 @@
         </nav>
     </section>
     <div class="textbox">
-        <h1>Know your pets more.</h1>
+        <h1>Know Your Pets More.</h1>
         <p>Blabllablablabla balb alb alba lbalbalbalbabab<br>make sure you buy what you need.</p>
         <a href="#learn-more">
-            <button class="learn">LEARN MORE</button>
+            <button class="main-button">LEARN MORE</button>
         </a>
+        <a href="scan.php">
+            <button class="main-button">SCAN NOW</button>   
+        </a>
+        
     </div>
     <div class="large-container" id="learn-more">
       <h1 id="learn-more-header">LEARN MORE ABOUT YOUR DOG HERE</h1>
