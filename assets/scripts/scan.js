@@ -67,7 +67,16 @@ $("#predict").click(async function(){
 	var confidence = parsedData[0].item;
 	document.getElementById("help-loading").style.display = "none";
 	document.getElementById("output").style.display = "block";
-    $("#predictText").html("Our model predicts that your dog is a:");
+
+	console.log(prediction[0])
+	var firstLetter = prediction[0].toLowerCase();
+	
+	if(firstLetter == "a" || firstLetter == "e" || firstLetter == "i" || firstLetter == "o" || firstLetter == "u"){
+		$("#predictText").html("Our model predicts that your dog is an:");
+	}
+	else{
+		$("#predictText").html("Our model predicts that your dog is a:");
+	}
 	$("#result").html(prediction);
 	confidence = (confidence*100).toFixed(2);
 	//$("#resultAcc").html("Percentage confidence = "+confidence+"%"); //% confidence
