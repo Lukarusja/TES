@@ -16,8 +16,7 @@
   background-position: center;
 }
 
-.logo a:hover, .logo a:visited, .logo a:link, .logo a:active
-{
+.logo a:hover, .logo a:visited, .logo a:link, .logo a:active{
     text-decoration: none;
     color: black;
 }
@@ -32,6 +31,10 @@
   left: 50%;
   transform: translate(-50%,-50%);
   text-align:center;  
+}
+
+.textbox a:hover, .textbox a:visited, .textbox a:link, .textbox a:active{
+  text-decoration: none;
 }
 
 .textbox h1{
