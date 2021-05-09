@@ -89,9 +89,8 @@ $("#predict").click(async function(){
 		$("#predictText").html("Our model predicts that your dog is a:");
 	}
 	var bestDogName = prediction.replace('_', ' ');
-	var helper = bestDogName.charAt(0).toUpperCase() + bestDogName.slice(1);
 	document.getElementById("sql-data").style.display = "block";
-	//showDog(helper);
+	showDog(prediction);
 	$("#result").html(predictionOutput);
 	confidence = (confidence*100).toFixed(2);
 	//$("#resultAcc").html("Percentage confidence = "+confidence+"%"); //% confidence
