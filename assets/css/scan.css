@@ -56,19 +56,20 @@ body{
 
 .preview img{
 	display:none;
-  width: 100%;
+  /* width: 100%; */
   height: auto;
+  max-width: 80%;
 }
 
 #result-container{
-  /* visibility: hidden; */
-  /* display: none; */
+  display: none;
   margin-top: 20px;
   padding: 50px;
   position: relative;
   height: auto;
   text-align: center;
   background-color: white;
+  transition: 1s;
 }
 .centered{
 	text-align:center;
@@ -107,7 +108,7 @@ input[type="file"] #file-upload-button{
 }
 
 #help-loading{
-  /* display: none; */
+  display: none;
 }
 
 input[type=file]::file-selector-button{
