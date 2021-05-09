@@ -39,6 +39,17 @@ var mainPage;
     
 })(mainPage || (mainPage = {}));
 
+function toTitle(slugBreedName){
+	var words = slugBreedName.split('_');
+
+	for (var i = 0; i < words.length; i++) {
+	  var word = words[i];
+	  words[i] = word.charAt(0).toUpperCase() + word.slice(1);
+	}
+  
+	return words.join(' ');
+}
+
 $("#predict").click(async function(){
 	var prOutput = await mainPage.predictImage();
 	console.log(prOutput);
@@ -64,11 +75,11 @@ $("#predict").click(async function(){
 	// console.log(parsedData); //sorted results
 	// console.log(parsedData[0]); //top result
 	var prediction = class_names[parsedData[0].idx];
+	var predictionOutput = toTitle(prediction);
 	var confidence = parsedData[0].item;
 	document.getElementById("help-loading").style.display = "none";
 	document.getElementById("output").style.display = "block";
 
-	console.log(prediction[0])
 	var firstLetter = prediction[0].toLowerCase();
 	
 	if(firstLetter == "a" || firstLetter == "e" || firstLetter == "i" || firstLetter == "o" || firstLetter == "u"){
@@ -77,10 +88,11 @@ $("#predict").click(async function(){
 	else{
 		$("#predictText").html("Our model predicts that your dog is a:");
 	}
-	$("#result").html(prediction);
+
+	$("#result").html(predictionOutput);
 	confidence = (confidence*100).toFixed(2);
 	//$("#resultAcc").html("Percentage confidence = "+confidence+"%"); //% confidence
-	console.log(bestDog);
+	//console.log(bestDog);
 });
 
 $("#predict").click(async function(){
