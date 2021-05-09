@@ -2,36 +2,29 @@ var mainPage;
 (function(mainPage) {
 	
 	$("#upload").click(function(){
-		console.log("upload button clicked");		
+		//console.log("upload button clicked");		
 	});
 	
 	$( "#submit" ).click(function uploadImage(){
-		console.log("submitted clicked");
 		//form submitted with upload photo button
 		var form = document.getElementById("uploadForm");
-		//console.log(form);
 		var fd = new FormData(form); //this is the variable that holds the current state of the form when the button is clicked.
 		var xhttp = new XMLHttpRequest(); //this is how we send the request to the server with our formData(the user image)
 		xhttp.open("POST","upload.php",true); //calling by POST is more secure (alternative is GET and puts binary information in the URL, yuck!)
 		xhttp.onreadystatechange = function(){
-		//console.log(this.readyState);
 			if(this.readyState ==4 &&this.status==200){ //if the php loads successfully, giving us our destination filename etc. in responsetext
 					$('#img').attr('src',xhttp.responseText); //this and innerhtml can be changed based on this data
-					$('.preview img').show();
-					console.log("here");
-					//console.log(xhttp);
-				
+					$('.preview img').show();				
 			};
 		};
-		
-		//console.log(fd);
 		xhttp.send(fd);
 	});
 	async function predictImage() {
 		
 		const model = await tf.loadGraphModel('assets/model/tfjs/model.json');
 		//load converted model+weights
-		var input = tf.browser.fromPixels(document.getElementById("img")); //image
+		var input = tf.browser.fromPixels(document.getElementById("img")); 	//importing image
+		//resize image for input to model
 		input = tf.image.resizeBilinear(
 			input,
 			[224, 224]
@@ -39,7 +32,6 @@ var mainPage;
 		//take input from the html element uploaded to
 		input = input.reshape([-1,224,224,3]);
 		input = input.toFloat();
-		//resizing/changing the image data for input
 		var prediction = model.predict(input);
 		return prediction.data();
     };
@@ -80,4 +72,6 @@ $("#predict").click(async function(){
 	//$("#resultAcc").html("Percentage confidence = "+confidence+"%");
 	console.log(bestDog);
 });
+
+
 $(document).ready(function(){});
