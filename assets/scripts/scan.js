@@ -61,13 +61,13 @@ $("#predict").click(async function(){
 			return 0;
 		}
 	});
-	console.log(class_names); 
-	console.log(parsedData); //sorted results 	
-	console.log(parsedData[0]); //top result (our best guess)
-	var bestDog = class_names[parsedData[0].idx];
+	// console.log(class_names); 
+	// console.log(parsedData); //sorted results
+	// console.log(parsedData[0]); //top result
+	var prediction = class_names[parsedData[0].idx];
 	var confidence = parsedData[0].item;
     $("#predictText").html("Our model predicts that your dog is a:");
-	$("#result").html(bestDog);
+	$("#result").html(prediction);
 	confidence = (confidence*100).toFixed(2);
 	//$("#resultAcc").html("Percentage confidence = "+confidence+"%");
 	console.log(bestDog);
@@ -75,3 +75,7 @@ $("#predict").click(async function(){
 
 
 $(document).ready(function(){});
+
+//making the result container visible when pressing "predict breed"
+//make loading visible when pressing predict breed
+//when breed detected, make loading invisible
