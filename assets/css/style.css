@@ -190,6 +190,7 @@ nav{
     text-decoration: none;
     letter-spacing: 3px;
     font-weight: bold;
+    padding: 12px;
     font-size: 14px;
 
 }
@@ -197,16 +198,16 @@ nav{
 .nav-links a.active{
   background:rgb(80, 57, 57);
   color: white;
-  border-radius: 4rem;
+  border-radius: 2;
   padding: 10px;
   transition:0.3s ease-out;
 }
 
 .nav-links a:hover{
-  background:rgb(59, 46, 46);
+  background-color: rgba(141, 119, 89);
   color: white;
-  border-radius: 4rem;
-  padding: 10px;
+  border-radius: 2px;
+  /* padding: 10px; */
   transition:0.3s ease-out;
 }
 
