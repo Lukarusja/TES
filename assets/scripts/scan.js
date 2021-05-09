@@ -90,7 +90,8 @@ $("#predict").click(async function(){
 	}
 	var bestDogName = prediction.replace('_', ' ');
 	var helper = bestDogName.charAt(0).toUpperCase() + bestDogName.slice(1);
-	showDog(helper);
+	document.getElementById("sql-data").style.display = "block";
+	//showDog(helper);
 	$("#result").html(predictionOutput);
 	confidence = (confidence*100).toFixed(2);
 	//$("#resultAcc").html("Percentage confidence = "+confidence+"%"); //% confidence
@@ -99,6 +100,7 @@ $("#predict").click(async function(){
 
 $("#predict").click(async function(){
 	document.getElementById("output").style.display = "none";
+	document.getElementById("sql-data").style.display = "none";
 	document.getElementById("result-container").style.display = "block";
 	document.getElementById("help-loading").style.display = "block";
 });

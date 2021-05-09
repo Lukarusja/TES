@@ -115,6 +115,10 @@ input[type="file"] #file-upload-button{
   display: none;
 }
 
+#sql-data{
+  margin-top: 25px;
+  display: none;
+}
 input[type=file]::file-selector-button{
   padding: 5px;
   margin: 5px;

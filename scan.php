@@ -80,7 +80,20 @@
                     <h2 class="center-horizontal" id="resultAcc"><h2>
                 </div>
             <div id="sql-data">
-            <!--BREED INFO GOES HERE-->
+                <!--BREED INFO GOES HERE-->
+                <table>
+                <tr>
+                    <th>Name</th>
+                    <th>Origin</th>
+                    <th>Dietary requirements</th>
+                    <th>Shouldn't eat</th>
+                    <th>Weight range</th>
+                    <th>Height range</th>
+                    <th>Life expectancy</th>
+                    <th>Common health problems</th>
+                    <th>Temperament</th>
+                </tr>
+                </table>
             </div>
         </div>
     </div>
