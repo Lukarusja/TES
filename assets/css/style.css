@@ -298,8 +298,8 @@ nav{
     width: 100%;
     background-image: linear-gradient(rgba(0, 0, 0, 0.658),rgba(0, 0, 0, 0.39)),url("../images/about-us.jpg");
     background-size: cover;
-
   }
+
 .sub-header h1{
   position: absolute;
   top: 28%;
@@ -310,6 +310,9 @@ nav{
   color: rgb(255, 255, 255);
   }
 
+#bug-report{
+  height: 20vh;
+}
 
 .about{
   background: url(../images/background.jpg) no-repeat left;
@@ -512,4 +515,61 @@ nav{
 
 .centered{
 	text-align:center;
+}
+
+
+.bug-container{
+  position: relative;
+  height: auto;
+  text-align: center;
+  padding: 50px;
+  width: 80%;
+  margin-bottom: 50px;
+  margin-top: 50px;
+  margin-left:auto;
+  margin-right:auto;
+  background-color: burlywood;
+}
+
+.bug-container input[type="button" i]{
+  padding: 5px;
+  margin: 5px;
+  border-style: none;
+  background-color: white;
+  color:black;
+  cursor: pointer;
+}
+
+.bug-container input[type="button" i]:hover {
+  padding: 5px;
+  margin: 5px;
+  border-style: none;
+  background-color: black;
+  color:white;
+  cursor: pointer;
+}
+
+#text-form{
+  min-width: 40%;
+  max-width: 40%;
+  min-height: 150px;
+  max-height: 150px;
+}
+
+@media screen and (max-width:768px){
+  #text-form{
+    max-width: 80%;
+    min-width: 80%;
+    width: 80%;
+  }
+}
+
+#thank-you-text{
+  display: none;
+  
+}
+
+#bug{
+  background-image: linear-gradient(rgba(0, 0, 0, 0.658),rgba(0, 0, 0, 0.39)),url("../images/bug-report.jpg");
+  background-size: cover;
 }
