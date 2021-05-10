@@ -65,7 +65,7 @@
                 </div>
             </div>
             <div>
-                <p class="centered" id="help-text"><a href="tutorial.html">Need help?</a> <a href="report-bug.html">Found a bug?</a></p>
+                <p class="centered" id="help-text"><a href="tutorial.html">Need help?</a> <a href="feedback.html">Found a bug?</a></p>
             </div>
         </div>
         <div id="result-container">
