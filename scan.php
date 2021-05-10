@@ -79,7 +79,7 @@
                     <h2 class="center-horizontal" id="result"></h2>
                     <h2 class="center-horizontal" id="resultAcc"><h2>
                 </div>
-            <div id="sql-data">
+            <div id="sql-data" style="overflow-x:auto;">
                 <!--BREED INFO GOES HERE-->
                 <table>
                 <tr>
