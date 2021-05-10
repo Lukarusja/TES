@@ -81,7 +81,8 @@
                 </div>
             <div id="sql-data" style="overflow-x:auto;">
                 <!--BREED INFO GOES HERE-->
-                <table>
+                <!-- for testing -->
+                <!-- <table>
                 <tr>
                     <th>Name</th>
                     <th>Origin</th>
@@ -93,7 +94,7 @@
                     <th>Common health problems</th>
                     <th>Temperament</th>
                 </tr>
-                </table>
+                </table> -->
             </div>
         </div>
     </div>
