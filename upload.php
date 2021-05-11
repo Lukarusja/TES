@@ -11,7 +11,7 @@
 	//file extension checker
 	if(in_array($imageFileType,$validExtensions)){
 		//upload file
-		if($_FILES['userPhoto']['size'] < 5000000){
+		if($_FILES['userPhoto']['size'] < 50000000){
 			if(move_uploaded_file($_FILES['userPhoto']['tmp_name'],$location)){
 				$response = $location;
 			}
