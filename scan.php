@@ -51,6 +51,7 @@
     <div id="main-container">
         <div id="initial-container">
             <h1 class="centered" id="scan-header">Upload Your Photo Here</h1>
+            <p class="centered" style="font-size:small">5mb file limit</p>
             <div id="upload-container">
                 <form method="post" action="" enctype="multipart/form-data" id="uploadForm">
                     <div class="centered">
