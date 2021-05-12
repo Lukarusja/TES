@@ -121,6 +121,10 @@
   
 }
 
+iframe{
+  width: 1280px;
+  height: 720px;
+}
 
 .b-content h2{
   padding: 50px;

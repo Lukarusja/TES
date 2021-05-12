@@ -50,10 +50,13 @@
         <p>You can learn how to use it <a href="tutorial.html">here</a></p>      
       </div>
       <div id=video-container>
-        <video autoplay muted loop onclick="this.paused? this.play() : this.pause()" id="main-video">
+        <!-- <video autoplay muted loop onclick="this.paused? this.play() : this.pause()" id="main-video">
           <source src="assets/videos/test.webm">
           Your browser does not support the video tag.
-        </video>
+        </video> -->
+        <iframe
+            src="https://www.youtube.com/embed/watch?v=pDu-_iL5tBc"
+            frameborder="0"></iframe>
       </div>
     <footer>
         <div class="footer-box">
