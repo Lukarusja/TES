@@ -589,6 +589,6 @@ nav{
 }
 
 #bug{
-  background-image: linear-gradient(rgba(0, 0, 0, 0.658),rgba(0, 0, 0, 0.39)),url("../images/bug-report.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.658),rgba(0, 0, 0, 0.39)),url("../images/feedback.jpg");
   background-size: cover;
 }
