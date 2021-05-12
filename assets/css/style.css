@@ -50,6 +50,7 @@
 .main-button{
   border:3px solid #DEB887;
   border-radius: 1rem;
+  margin-top: 10px;
   padding: 10px 20px;
   width: 170px;
   font-size: 20px;
@@ -472,7 +473,7 @@ nav{
   box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.1);
 }
 .step-image{
-  background-color: aqua;
+  background-color: white;
   height: 350px;
   margin-bottom: 15px;
   background-size: cover;
@@ -485,9 +486,28 @@ nav{
   text-align: center;
   padding: 10px;
 }
-.image-2{
-  background-image: url('../images/smile.jpg');
+.image-1{
+  background-image: url('../images/step-1.png');
+  background-size: cover;
 }
+
+.image-2{
+  background-image: url('../images/step-2.png');
+  background-size: cover;
+}
+
+.image-3{
+  background-image: url('../images/step-3.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.image-4{
+  background-image: url('../images/step-4.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
 .step:hover{
   background-color: rgb(255, 255, 255);
   transition: 0.3s;
