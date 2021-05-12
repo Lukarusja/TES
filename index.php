@@ -31,7 +31,7 @@
     </section>
     <div class="textbox">
         <h1>Know Your Dog More.</h1>
-        <p>Give your best friend the care it needs<br>NEED ANOTHER SLOGAN HERE</p>
+        <p>Give your best friend the care they need<br>because they deserve it</p>
         <a href="#learn-more">
             <button class="main-button">LEARN MORE</button>
         </a>
@@ -41,22 +41,20 @@
         
     </div>
     <div class="large-container" id="learn-more">
-      <h1 id="learn-more-header">LEARN MORE ABOUT YOUR DOG HERE</h1>
+      <h1 id="learn-more-header">LEARN MORE ABOUT YOUR DOG</h1>
       <div id="learn-more-text">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        <p>The Dog Breed Idenditier is a simple web application that utilises machine learning to detect a dog breed from a given image. </p>
+        <br>
+        <p>The application provides you with information based on the dog provided to make sure you can give it the best care it needs.</p>
+        <br>
+        <p>You can learn how to use it <a href="tutorial.html">here</a></p>      
       </div>
-      <!-- <div id=video-container>
+      <div id=video-container>
         <video autoplay muted loop onclick="this.paused? this.play() : this.pause()" id="main-video">
           <source src="assets/videos/test.webm">
           Your browser does not support the video tag.
         </video>
-      </div> -->
-      <div id="learn-more-text">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
       </div>
-      <br>
-      <br>
-    </div>
     <footer>
         <div class="footer-box">
             <div class="footer-content">
