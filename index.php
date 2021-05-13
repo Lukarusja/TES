@@ -50,11 +50,7 @@
         <p>You can learn how to use it <a href="tutorial.html">here</a></p>      
       </div>
       <div id=video-container>
-        <!-- <video autoplay muted loop onclick="this.paused? this.play() : this.pause()" id="main-video">
-          <source src="assets/videos/test.webm">
-          Your browser does not support the video tag.
-        </video> -->
-        <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/H4PSpR0p_sU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/IsGjSUp1XvM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
       </div>
     <footer>
         <div class="footer-box">
